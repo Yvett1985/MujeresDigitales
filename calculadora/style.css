@@ -1,0 +1,65 @@
+*{
+    font-family: 'Sólo otra mano', cursiva;
+    color: #fff;
+}
+
+body{
+    margin: 0;
+    background-image: url("..//calculadora/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100% 100%;
+	background-color: #282c33;
+	background-blend-mode: soft-light;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: rgb(103, 9, 43);   
+    padding: 15px;
+    box-shadow: 15px 13px 0px rgba(98, 21, 52, 0.435);
+    border-radius: 32px;
+}
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 52px;
+    font-size: 1.5em;
+    border: none;
+    background-color: rgb(103, 9, 43);  
+    box-shadow: 5px 5px 10px -3px rgba(42, 2, 18, 0.435), -5px -5px 15px 3px  #00ffc90f;     
+}
+button:active{
+    background-color: rgb(32, 9, 17);
+}
+button:focus{
+    outline: none;
+}
+.col-2{
+    grid-column: span 2;
+}
+.display{
+    grid-column: 1 / -1;
+    padding: 20px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column ;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-color: rgb(181, 124, 124);
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-around;
+    word-break: break-all;
+    box-shadow: 0px 0px 25px rgb(15, 0, 0);
+    font-size: 30px
+}
