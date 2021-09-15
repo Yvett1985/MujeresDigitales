@@ -5,7 +5,7 @@
 
 body {
     /*font-family: 'Urbanist', sans-serif;*/
-    margin: 20px 250px;
+    margin: 50px 200px;
 }
 .container{
     width: 70%;
@@ -21,7 +21,7 @@ article#create-account {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 h1 {
     width: max-content;
@@ -34,30 +34,33 @@ h1 {
 .title1{
     font-family: 'Urbanist', sans-serif;
     font-size: 30px;
-}
-.button-account {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    align-content: baseline;
-    justify-content: space-between;
-    
+    font-weight: normal;
 }
 button.account {
     cursor: pointer;
-    padding-block: 10px;
-    padding-top: 10px;
+    font-size: 13px;
+    padding-block: 35px;
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
     border-radius: 9px;
     border: solid 0px;
-    height: 40px;
+    height: 30px;
+    text-align: center;
     background-color: #ff4d00c7;
     box-shadow: 3px 6px 10px 1px rgb(249 85 19 / 40%);
 }
-p.text {
-    width: 60%;
-    line-height: 24px;
+.button{
+    height: 70px;
     padding: 5px;
+}
+
+p.text {
+    width: 57%;
+    line-height: 1.7em;
+    padding: 5px;
+    text-align: justify;
+    font-size: large;
 }
 
 section#briefcase {
@@ -70,9 +73,20 @@ div {
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: flex-end;
-    padding: 15px;
+    padding: 30px;
 }
 img {
     width: 150px;
     padding: 50px;
+}
+
+h2 {
+    height: 30px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
