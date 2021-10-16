@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclos - Condicionales</title>
+</head>
+
+<style>
+    .Operiones{
+    border: solid 1px gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
+    color: wheat;
+    background: rgb(62, 8, 163);
+    cursor: pointer;
+}
+</style>
+
+<body>
+
+   <script>
+
+       var valor1 = 0;
+       var valor2 = 0;
+       var nombre = 'Yarymi'
+       var apellido = 'Ordonez'
+
+       var multiplica = function(){
+           console.log(valor1 * valor2) 
+       }
+
+       var suma = function(){
+           console.log(valor1 + valor2) 
+       }
+
+       var resta = function(){
+           console.log(valor1 - valor2) 
+       }
+
+       var dividir = function(){
+           console.log(valor1 / valor2) 
+       }
+
+       var nombrecompleto = function(){
+           console.log(nombre + ' ' + apellido)
+       }
+
+       var obtener = function(){
+           console.log('obteniendo datos')
+           var a = document.getElementById('prueba1').value
+           var b = document.getElementById('prueba2').value
+           valor1 = parseInt (a);
+           valor2 = parseInt (b);
+        }
+
+
+        for (var index = 0; index <= 20; index ++ ) {
+            console.log('5' + 'X' +  index + '=' + (5*index))
+        }
+
+        for (var camilo = 0; camilo <= 5; camilo++) {
+            console.log(camilo)             
+        }
+
+
+
+        var dato1 = 4
+        var dato2 = 5
+
+        if (true) {
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+
+        if ('jhon' != 'juan') {
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+
+        if (dato1 < dato2) {
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+
+        if (4<5 && 3>2 && 1>0){
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+
+        if (1==2 || 4==4){
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+            
+        if (2 == (1+1)) {
+            console.log('si se cumplio la condicion')
+        }else{
+            console.log('no se cumplio la condicion')
+        }
+
+
+        /*Ejericicio switch*/
+        
+        var dato = 100;
+        var analizar = function(){
+            switch (dato){
+            case 100:
+                console.log('el valor es 100')
+                break;
+            
+            case 200:
+                console.log('el valor es 200')
+                break;
+
+            case 300:
+                console.log('el valor es 300')
+                break;
+
+            default:
+                console.log('ninguno')
+                break;
+        }
+        dato = dato + 100
+        }
+
+        /*Comparación if*/
+
+        var dato = 100;
+        var analizar = function(){
+
+            if(dato == 100){
+                console.log('100')
+            }
+
+            if(dato == 200){
+                console.log('200')
+            }
+
+            if(dato == 300){
+                console.log('300')
+            }
+            if(dato != 100 && dato != 200 && dato != 300)
+                console.log('ninguno')
+        dato = dato + 100
+        }
+
+        
+       
+
+        /*Ejercicio While*/
+
+        var dato1 = 100
+        while (dato1 < 120){
+            console.log('imprimir')
+            dato1 = dato1 + 1
+        }
+
+        var booEstado = true
+        var contador = 0;
+        while(booEstado){
+
+            contador = contador + 1;
+
+            console.log('imprimir')
+
+            if (contador == 5){
+                booEstado = false;
+            }
+        }
+       
+
+    </script>
+
+   <input type="text" id="prueba1">
+   <input type="text" id="prueba2">
+
+
+    <div onclick="multiplica()" class="Operiones">X</div>
+    <div onclick="suma()">Sumar</div>
+    <div onclick="resta()">Restar</div>
+    <div onclick="dividir()">Dividir</div>
+    <div onclick="nombrecompleto()">Nombre completo</div>
+    <div onclick="obtener()">Obtener contenido</div>
+    <div onclick="analizar()">Analizar</div>
+
+</body>
+</html>
