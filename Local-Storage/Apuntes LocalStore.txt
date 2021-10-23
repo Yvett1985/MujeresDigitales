@@ -1,0 +1,4 @@
+LocalStorage (Almacenar información en el navegador)
+
+Frontend ---> Peticion (Request) ----> Internet ----> Backend ---> DB
+Backend  ---> Respuesta (Response) ---> Frontend 

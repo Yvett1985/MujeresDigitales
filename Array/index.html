@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+
+</head>
+
+<style>
+    .Operiones{
+    border: solid 1px gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
+    color: wheat;
+    background: rgb(62, 8, 163);
+    cursor: pointer;
+}
+</style>
+
+<body>
+
+   <input type="text" id="prueba1">
+   <input type="text" id="prueba2">
+
+
+    <div onclick="multiplica()" class="Operiones">X</div>
+    <div onclick="suma()">Sumar</div>
+    <div onclick="resta()">Restar</div>
+    <div onclick="dividir()">Dividir</div>
+    <div onclick="nombrecompleto()">Nombre completo</div>
+    <div onclick="obtener()">Obtener contenido</div>
+    <div onclick="analizar()">Analizar</div>
+
+    
+    
+    <input type="text" id="minombre" class="pruebax" name='xx'>
+    <input type="text" id="minombre2" class="pruebax">
+    <div onclick="agregarinformacion()">Agregar dato</div>
+
+    <div id='contenedordedatos'>
+        vacio
+    </div>
+
+    <div id="tablademultiplicar">
+
+    </div>
+
+    <div onclick="agregarcontenido()">Agregar</div>
+    <div onclick="mostrardatos()">Mostrar</div>
+
+    <input type="text" id="criterio">
+    <div onclick="buscarycambiar()">Buscar y cambiar</div>
+
+    
+
+    <script src="index.js"></script>
+    
+
+</body>
+</html> 
