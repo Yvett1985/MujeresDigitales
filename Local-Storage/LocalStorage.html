@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="micorreo" placeholder="Ingresa tu correo">
+        <div onclick="almacenaremail()"> Guardar</div>
+        <div onclick="traercorreo()">Cargar</div>
+        <div onclick="borrartodo()">Borrartodo</div>
+        <div onclick="borraremail()">BorrarEmail</div>
+    </div>
+
+
+    <script>
+
+        //Ejemplo de conversion ARRAY
+        var datos = ['yarymi', 'yvett', 'erika', 'sofi']
+
+        var datosconevrtidos = JSON.stringify(datos)
+
+        //Primero carga la información y despues guardo
+        var almacenaremail = function(){
+            var correo = document.getElementById('micorreo').value
+            localStorage.setItem("email",correo)
+            localStorage.setItem("password","clave")
+            localStorage.setItem("datos",datosconevrtidos) //Guardar 
+        }
+
+        // Primero leo, lo almaceno y despues la asignamos el valor
+        var traercorreo = function(){
+            var correo = localStorage.getItem("email")
+             document.getElementById('micorreo').value = correo
+             datos = JSON.parse(localStorage.getItem('datos')) //Traer
+             console.log(datos)
+            
+        }
+        //Limpia el LocaStorage
+        var borrartodo = function(){
+            localStorage.clear()
+        }
+
+        //Borrar solo una funcionalidad 
+        var borraremail = function(){
+            localStorage.removeItem('email')
+        }
+   
+    </script>
+    
+</body>
+</html>

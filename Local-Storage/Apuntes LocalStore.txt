@@ -2,3 +2,10 @@ LocalStorage (Almacenar información en el navegador)
 
 Frontend ---> Peticion (Request) ----> Internet ----> Backend ---> DB
 Backend  ---> Respuesta (Response) ---> Frontend 
+
+NOTA: ANY = ARRAY
+
+CREAR                      = ARRAY ---> var nombre = [];
+AGREGAR DATOS              = PUSH  ---> nombre.push ({})
+ALMACENAR DATOS            = setItem ---> localStorage.setItem('datos',x)
+CONVERTIR CADENA DE TEXTO  = JSON ---> var x = JSON.stringify(misdatos) 

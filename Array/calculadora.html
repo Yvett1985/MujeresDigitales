@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <style>
+        .boton{
+            border: solid 0px red;
+            width: 30px;
+            text-align: center;
+            float: left;
+            background: rgb(228, 72, 165);
+            color: rgb(223, 209, 209);
+            margin: 1px;
+            cursor: pointer;
+        }
+
+        #contenedor{
+            width: 150px;
+        }
+
+
+    </style>
+
+    <input type="text" id="resultado" style="width: 120px">
+
+    <div id="contenedor">
+
+        <div onclick="concatenar(9)" class="boton">9</div>
+        <div onclick="concatenar(2)" class="boton">2</div>
+        <div onclick="concatenar(1)" class="boton">1</div>
+        <div onclick="concatenar(3)" class="boton">3</div>
+        <div onclick="concatenar(4)" class="boton">4</div>
+        <div onclick="concatenar(5)" class="boton">5</div>
+        <div onclick="concatenar(6)" class="boton">6</div>
+        <div onclick="concatenar(7)" class="boton">7</div>
+        <div onclick="concatenar(8)" class="boton">8</div>
+        <div onclick="concatenar(0)" class="boton">0</div>
+        
+
+        <div onclick="concatenar('+')" class="boton">+</div>
+        <div onclick="concatenar('-')" class="boton">-</div>
+        <div onclick="concatenar('*')" class="boton">*</div>
+        <div onclick="concatenar('/')" class="boton">/</div>
+
+        <div onclick="evaluar()" class="boton">=</div>
+        <div onclick="borrar()" class="boton">C</div>
+        <div onclick="cadatanto()" class="boton" >CT</div>
+
+    </div>
+
+    <script>
+
+        var temporal = ""
+
+        var concatenar = function(valor){
+            temporal = temporal + valor
+            console.log(temporal)
+            document.getElementById('resultado').value = temporal
+        }
+
+        var borrar = function(){
+            temporal = ""
+            document.getElementById('resultado').value = temporal
+        }
+
+        var evaluar = function(){
+            temporal = eval(temporal)
+            document.getElementById('resultado').value = temporal
+        }
+
+        //Esperar determinado tiempo setTimeout
+        var esperar = function(){
+            setTimeout(function(){
+            console.log('mensaje despues de 5 segundos')
+        },5000)        
+        }
+
+        //Ejecutar determinado tiempo setInterval
+        var cadatanto = function(){
+            setInterval(function(){
+            console.log('mensaje despues de 1 segundos')
+        },1000)
+        }
+        
+
+    </script>
+
+    
+
+    
+</body>
+</html>

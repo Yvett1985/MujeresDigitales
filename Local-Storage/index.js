@@ -7,11 +7,11 @@ var guardar = function(){
     var nombre2 = document.getElementById('nombre').value
     var apellido2 = document.getElementById('apellido').value
 
-    misdatos.push({nombre:nombre2,apellido:apellido2})
-    var x = JSON.stringify(misdatos)
+    misdatos.push({nombre:nombre2,apellido:apellido2}) //Subir datos (Regsitro)
+    var x = JSON.stringify(misdatos) //Convertir cadena de texto
     console.log(x)
     alert('Prueba')
-    localStorage.setItem('datos',x)
+    localStorage.setItem('datos',x) //Almacenar datos
 
     // localStorage.setItem('nombre', nombre)
     // localStorage.setItem('apellido', apellido)
