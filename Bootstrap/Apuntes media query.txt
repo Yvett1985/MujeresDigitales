@@ -1,0 +1,9 @@
+Por cada resolucion se debe crear un media query
+
+Ejemplo:
+ @media (min-width: 900px) {
+        .Prueba600 {
+          width: 50%;
+          float: left;
+        }
+      }

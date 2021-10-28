@@ -1,0 +1,2 @@
+* PAGINA WEB     = Pagina informativa, solo hay datos para leer, bloog, foro de alguien.
+* APLICACION WEB = Tiene interacción con el usuario, recibe y envia, ejemplo Gmail, facebook

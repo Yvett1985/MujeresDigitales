@@ -1,0 +1,43 @@
+
+NOTA:
+CDN
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+_________________________________________________________________________________________________________________
+Bootstrap
+
+<div class="container">
+  <div class="row">    ---> FILAS
+    <div class="col">  ---> COLUMNAS
+      1 of 2
+    </div>
+
+
+Extra small
+<576px	
+Small
+=576px	
+Medium
+=768px	
+Large
+=992px	
+Extra large
+=1200px
+
+Max container width	None (auto)	540px	720px	960px	1140px
+
+Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+
+# of columns	12
+
+Gutter width	30px (15px on each side of a column)
+
+Nestable	Yes
+
+Column ordering	Yes
+
+_________________________________________________________________________________________
+
+Modal 
+
