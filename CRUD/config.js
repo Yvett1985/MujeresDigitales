@@ -1,5 +1,5 @@
-var configuracion = {};
+var config = {};
 
-configuracion.puerto = 3002
+config.puerto = 3002
 
-module.exports.config = configuracion
+module.exports.config = config
