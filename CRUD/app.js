@@ -7,10 +7,6 @@ global.appRoot = path.resolve(__dirname)
 global.config = require('./config.js').config 
 
 
-
-
-
-
 const mongoose = require('mongoose');
 
 //cabeceras que permiten comunicarse con los datos
