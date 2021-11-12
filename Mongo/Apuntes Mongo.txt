@@ -1,0 +1,45 @@
+
+******MONGO******
+
+> show databases
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+
+> use mujeres
+switched to db mujeres
+
+__________________________________________________________________________
+
+OPCIONES INSERT
+
+> db.usuarios.insertOne({nombre:'Yarymi})
+> db.usuarios.insertMany([{nombre:'Yarymi},{nombre:'Sof'}])
+___________________________________________________________________________
+
+OPCIONES DE BUSQUEDAD POR MONGO 
+
+EL elemanto FIND me permite buscar dentro de los contenidos que tiene la BD 
+
+> db.usuarios.find({})
+____________________________________________________________________________
+
+OPCION ACTUALIZACION MONGO 
+
+> db.usuarios.updateMany({},{$set:{estado:1}})
+____________________________________________________________________________
+
+OPCIONES DE BORRADO MONGO
+
+> db.usuarios.deleteOne({nombre:'Sof'})
+> db.usuarios.deleteMany({estado:1})
+____________________________________________________________________________
+
+
+
+
+ 
